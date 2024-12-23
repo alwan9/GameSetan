@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="src/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/effect.css" />
+  <!-- animasi aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <!--  -->
+  <!-- <link href="node_modules/flowbite/dist/flowbite.min.css" rel="stylesheet"> -->
+  <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQSFNDWMGG"></script>
+
+
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QQSFNDWMGG');
+  </script>
+  <link rel="icon" href="asset/black.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" href="asset/white.png" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <title>Game Setan Official | By ARTWORKHEX</title>
+</head>
+
+<body class="text-white bg-zinc-800 overflow-x-hidden ">
+  <header id="home" class="text-white mb-20 bg-center bg-cover bg-no-repeat w-screen h-screen -z-20">
+
+
+    <video poster="asset/header2.jpg" class="w-screen h-screen absolute  right-0 bottom-0 -z-10 object-cover" autoplay
+      loop muted>
+      <source src="asset/bgVideo.mp4" type="video/mp4" />
+    </video>
+
+    <!-- navbar -->
+    <nav class="py-5 w-screen glas-nav justify-center fixed flex z-30">
+      <div>
+        <a href="https://artworkhex.github.io/awh/">
+          <img class="ml-5 w-[130px] sm2:w-[200px] md2:w-[230px]" src="asset/logo.png" alt />
+        </a>
+      </div>
+      <div class="hidden md2:flex gap-10 items-center px-10">
+        <a class=" hover:text-rose-500  duration-300" href="/#home">Beranda</a>
+        <div class="h-[50%] w-[2px] bg-zinc-800"></div>
+        <a class=" hover:text-rose-500  duration-300" href="/#game">Produk</a>
+        <div class="h-[50%] w-[2px] bg-zinc-800"></div>
+        <a class=" hover:text-rose-500  duration-300" href="/#preview">Game Play</a>
+        <div class="h-[50%] w-[2px] bg-zinc-800"></div>
+        <a class=" hover:text-rose-500  duration-300" href="/#enemy">Tentang</a>
+        <a class=" hover:text-rose-500 hover:bg-zinc-800 border-[1px] duration-300 border-white rounded-lg px-10 hover:border-rose-500 py-1 "
+          href="#Contact">Hubungi</a>
+        <a class=" items-center hover:text-rose-500  duration-300 py-1 hover:bg-zinc-800 hover:border-rose-500 border-2 text-black bg-white rounded-lg px-10"
+          href="pertanyaan/index.html">Hak Cipta</a>
+      </div>
+    </nav>
+    <div class="ml-5 bottom-0 absolute mb-5 bd cursor-vertical-text">
+      Design by <span class="text-zinc-400"> artworkhex</span> | Follow <a
+        class="text-zinc-400 hover:text-zinc-500 cursor-pointer" target="_blank"
+        href="https://instagram.com/artworkhex_ofc"> instagram</a>
+    </div>
+    <div class="flex gap-6 py-10 items-center mt-10 justify-end absolute bottom-[5%] right-[10%]">
+      <div class="text-center">
+        <h1 class="font-bold">Pengguna</h1>
+        <p class="text-sm mt-1">29+ pengguna</p>
+      </div>
+      <div class="w-[3px] h-full bg-zinc-50 rounded-full">l</div>
+      <div class="text-center">
+        <h1> <span class="bg-zinc-200 px-1 font-bold text-xs text-zinc-900">12+ </span></h1>
+        <p class="text-sm mt-1">Rated for 12+</p>
+      </div>
+      <div class="w-[3px] h-full bg-zinc-50 rounded-full">l</div>
+      <div class="text-center">
+        <h1 class="font-bold">Lisensi</h1>
+        <p class="text-sm mt-1">Free Download</p>
+      </div>
+    </div>
+
+    </div>
+  </header>
+  <!-- top button -->
+  <a href="#home">
+    <div
+      class="p-5 bg-red-800 drop-shadow-lg hover:bg-red-900 cursor-pointer fixed bottom-10 right-10 rounded-full hover:scale-105">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path stroke-dasharray="20" stroke-dashoffset="20" d="M12 21l0 -17.5">
+            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0" />
+          </path>
+          <path stroke-dasharray="12" stroke-dashoffset="12" d="M12 3l7 7M12 3l-7 7">
+            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0" />
+          </path>
+        </g>
+      </svg>
+    </div>
+  </a>
+
+  <!-- perkenalan -->
+  <div data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center"
+    data-aos-once="false" data-aos-offset="0" data-aos-delay="300"
+    class=" grid md1:grid-cols-2 gap-10 py-[20%] items-center  mt-5 px-[4%] md1:px-[10%]">
+    <div class="order-2">
+      <div class="font-bold mb-3  text-2xl sm2:text-4xl lg1:text-5xl lg1:mb-7 libre-caslon-text-bold">
+        Game Setan By Artworkhex
+      </div>
+      <div class="text-xs sm1:text-sm sm2:text-base lg1:text-2xl mb-10">
+        Game setann di buat oleh leader artworkhex, di bawah pengawasan alwan,
+        saat ini telah merilis 2 season. <br />
+        <br />
+        Perkenalkan ini adalah Game Setan Season 1 dan Season 2 berawal saat
+        kami diberi project membuat game seadanya dan terciptalah Game Setan
+        Season 1 saat ini Game Setan S1 telah di update dan rilislah Game
+        Setan S2
+        <br /><br />
+        <span class="hidden lg2:block">
+          Melanjutkan Game Setan Season 1 yang cukup menarik. Saat ini Game
+          Setan S2 kembali menceritakan perjalanan seorang anak yang tersesat
+          di hutan dia selalu tersesat saat ingin keluar dari dimensi lain.
+        </span>
+      </div>
+
+      <div class="flex gap-3 items-center">
+        <a target="_blank" href="https://www.youtube.com/@alwannn_">
+          <button
+            class="flex items-center gap-3 bg-transparent border-2 border-zinc-600 py-3 duration-300 hover:bg-zinc-900 px-5 md1:px-12 py-1 md:py-3 rounded-md md1:rounded-xl cursor-pointer ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="currentColor" fill-opacity="0" d="M12 11L12 12L12 13z">
+                <animate fill="freeze" attributeName="d" begin="0.6s" dur="0.2s"
+                  values="M12 11L12 12L12 13z;M10 8.5L16 12L10 15.5z" />
+                <set fill="freeze" attributeName="fill-opacity" begin="0.6s" to="1" />
+              </path>
+              <path fill="none" stroke="currentColor" stroke-dasharray="64" stroke-dashoffset="64"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 5c9 0 9 0 9 7c0 7 0 7 -9 7c-9 0 -9 0 -9 -7c0 -7 0 -7 9 -7Z">
+                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" />
+              </path>
+            </svg>
+            Subscribe</button>
+        </a>
+        <a target="_blank" href="https://instagram.com/zzls__">
+          <button
+            class="bg-zinc-700 border-2 border-zinc-600 py-3 duration-300 hover:bg-zinc-900 px-5 md1:px-12 py-1 md:py-3 rounded-md md1:rounded-xl cursor-pointer flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <circle cx="17" cy="7" r="1.5" fill="currentColor" fill-opacity="0">
+                <animate fill="freeze" attributeName="fill-opacity" begin="1.3s" dur="0.15s" values="0;1" />
+              </circle>
+              <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path stroke-dasharray="72" stroke-dashoffset="72"
+                  d="M16 3c2.76 0 5 2.24 5 5v8c0 2.76 -2.24 5 -5 5h-8c-2.76 0 -5 -2.24 -5 -5v-8c0 -2.76 2.24 -5 5 -5h4Z">
+                  <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="72;0" />
+                </path>
+                <path stroke-dasharray="28" stroke-dashoffset="28"
+                  d="M12 8c2.21 0 4 1.79 4 4c0 2.21 -1.79 4 -4 4c-2.21 0 -4 -1.79 -4 -4c0 -2.21 1.79 -4 4 -4">
+                  <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.6s" values="28;0" />
+                </path>
+              </g>
+            </svg>
+            <span>
+              Ikuti Kami
+            </span>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="order-1" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-mirror="true"
+      data-aos-anchor-placement="top-center" data-aos-once="false" data-aos-offset="0" data-aos-delay="300">
+      <img class="w-full " src="asset/mockup4.png" alt />
+    </div>
+  </div>
+
+  <h1 data-aos="fade-up" class="text-center px-[15%] my-10 md1:text-5xl  text-zinc-400">
+    Game Setan mengajak pemain bertahan hidup, mengungkap rahasia, dan melawan musuh menyeramkan dalam <span
+      class="font-bold text-zinc-200"> dunia penuh misteri dan ketegangan.</span>
+  </h1>
+
+  <div id="preview"> </div>
+  <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center"
+    data-aos-once="false" data-aos-offset="0" data-aos-delay="300" class="relative">
+    <!-- label -->
+    <div
+      class="absolute md1:right-[10%] right-2 top-2 md1:top-10 bg-orange-700 px-5 py-2 md1:px-20 md1:text-4xl font-bold drop-shadow-lg rounded-l-2xl md1:py-10 z-[9]">
+      Versi Terbaru
+    </div>
+    <video class="px-[4%] md1:px-[10%] w-full" autoplay loop muted>
+      <source src="asset/season2.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+
+  <div class="px-[4%] md1:px-[10%] grid md1:grid-cols-2 gap-20 items-center py-[20%]">
+    <img data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-mirror="true"
+      data-aos-anchor-placement="top-center" data-aos-once="false" data-aos-offset="0" data-aos-delay="300"
+      class="px-[20%] w-full" src="./asset/nama.png" alt="">
+    <div data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-mirror="true"
+      data-aos-anchor-placement="top-center" data-aos-once="false" data-aos-offset="0" data-aos-delay="300">
+      <div>
+        <h1 class="md1:text-4xl text-center md1:text-left font-bold libre-caslon-text-bold">
+          Kelebihan Game Setan
+          <br>
+          by Artworkhex
+        </h1>
+        <div class="mt-10">
+          <div class="flex items-center gap-10 mt-5 ">
+            <div class="p-5 bg-zinc-900 rounded-lg">
+              <svg class="w-[40px] h-[40px] md1:w-[80px] md1:h-[80px]" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 21 21">
+                <g fill="none" fill-rule="evenodd">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.5 10.55a8 8 0 1 1 1.073 3.952" mt-10 />
+                  <path fill="currentColor" fill-rule="nonzero" d="m2.5 13.5l2.5-3H0z" />
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M10.5 6.5v5h3" />
+                </g>
+              </svg>
+            </div>
+            <div class="">
+              <h3 class="text-2xl md1:text-3xl font-medium md1:font-bold">Cerita yang Menarik dan Menegangkan</h3>
+              <p class="mt-3 hidden md1:block font-light text-zinc-300">Game Setan menghadirkan cerita misterius tentang
+                anak yang
+                tersesat di dimensi lain, dengan perkembangan seru di setiap musim.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-10 mt-5">
+            <div class="p-5 bg-zinc-900 rounded-lg">
+              <svg class="w-[40px] h-[40px] md1:w-[80px] md1:h-[80px]" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M7.5 13h2v1.25q0 .325.213.538t.537.212t.538-.213t.212-.537v-4.5q0-.325-.213-.537T10.25 9t-.537.213t-.213.537v1.75h-2V9.75q0-.325-.213-.537T6.75 9t-.537.213T6 9.75v4.5q0 .325.213.538T6.75 15t.538-.213t.212-.537zm6 2H17q.425 0 .713-.288T18 14v-4q0-.425-.288-.712T17 9h-3.5q-.2 0-.35.15T13 9.5v5q0 .2.15.35t.35.15m1-1.5v-3h2v3zM4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm0-2h16V6H4zm0 0V6z" />
+              </svg>
+            </div>
+            <div class="">
+              <h3 class="text-2xl md1:text-3xl font-medium md1:font-bold">Grafis dan Desain Visual Menakjubkan</h3>
+              <p class="mt-3 hidden md1:block font-light text-zinc-300">Desain grafisnya tajam, dengan latar memukau dan
+                karakter hidup
+                yang memberikan pengalaman visual imersif.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-10 mt-5">
+            <div class="p-5 bg-zinc-900 rounded-lg">
+              <svg class="w-[40px] h-[40px] md1:w-[80px] md1:h-[80px]" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2048 2048">
+                <path fill="currentColor"
+                  d="M1879 553q82 82 125 186t44 221q0 35-2 84t-8 106t-19 117t-33 119q-30 86-70 140t-83 85t-87 42t-82 11q-33 0-60-11t-52-30t-46-41t-43-48q-21-24-41-46t-43-39t-46-29t-54-12H769q-29 1-53 12t-47 28t-42 40t-42 46q-21 24-42 47t-46 42t-52 29t-61 12q-38 0-82-11t-87-41t-83-85t-70-141q-20-58-32-118t-19-118t-9-106t-2-84q0-116 43-220t126-187q81-82 186-125t221-44h896q116 0 220 43t187 126m-14 791q19-53 30-110t16-109t7-96t2-69q0-93-35-174t-96-142t-142-96t-175-36H576q-93 0-174 35t-142 96t-96 142t-36 175q0 26 1 69t7 95t17 110t30 110q25 72 55 111t58 57t52 21t36 3q22 0 48-26t56-60q24-28 51-57t61-54t75-41t91-18h516q50 2 91 18t74 40t61 54t52 58q29 33 55 59t49 27q12 0 35-3t52-21t59-57t55-111M512 896h128v128H512v128H384v-128H256V896h128V768h128zm1152 128q27 0 50 10t40 27t28 41t10 50q0 27-10 50t-27 40t-41 28t-50 10q-27 0-50-10t-40-27t-28-41t-10-50q0-27 10-50t27-40t41-28t50-10m-256-256q27 0 50 10t40 27t28 41t10 50q0 27-10 50t-27 40t-41 28t-50 10q-27 0-50-10t-40-27t-28-41t-10-50q0-27 10-50t27-40t41-28t50-10" />
+              </svg>
+            </div>
+            <div class="">
+              <h3 class="text-2xl md1:text-3xl font-medium md1:font-bold">Gameplay yang Seru dan Menantang</h3>
+              <p class="mt-3 hidden md1:block font-light text-zinc-300">Gameplay menghadirkan tantangan seru di setiap
+                level dengan
+                teka-teki dan musuh yang menambah intensitas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- judul utama 1 -->
+  <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center"
+    data-aos-once="false" data-aos-offset="0" data-aos-delay="300" class="px-[15%] my-[10%]">
+    <h1 class="text-center text-2xl md1:text-4xl font-bold mt-8 libre-caslon-text-bold">Game Setan: Petualangan Seram
+      yang Memikat
+    </h1>
+    <p class="text-center md1:text-2xl mt-4 px-4">Game Setan adalah permainan yang menggabungkan unsur horor dan
+      petualangan
+      dengan alur cerita yang penuh misteri. Dalam permainan ini, pemain akan mengikuti perjalanan seorang anak yang
+      tersesat di hutan dan terjebak di dimensi lain. Setiap musim memperkenalkan cerita baru yang semakin memikat dan
+      menegangkan. Dengan grafis yang menakjubkan dan gameplay yang penuh tantangan, *Game Setan* membawa pengalaman
+      bermain yang tak terlupakan, penuh dengan teka-teki dan musuh yang harus dihadapi.</p>
+  </div>
+
+  <!-- ----------------------------------------- -->
+  <!-- konten 1 / produk 1 /season 1 -->
+
+
+
+  <div id="game"></div>
+  <div class="px-[4%] md1:px-[10%] grid md1:grid-cols-2 gap-10 my-[20%]">
+    <!-- card 1 -->
+    <div data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-mirror="true"
+      data-aos-anchor-placement="top-center" data-aos-once="false" data-aos-offset="0" data-aos-delay="300"
+      class="bg-gradasi1 px-[5%] py-[8%] hover:scale-105 cursor-pointer duration-200 rounded-lg grid md1:grid-cols-2 items-center border-2 border-zinc-600 shadow-xl gap-10">
+      <div>
+        <h1 class="text-4xl mb-2 font-bold libre-caslon-text-bold">Game Setan
+          <br>
+          Season 1
+        </h1>
+        <p>Size: 179.2 MB</p>
+        <p class="text-zinc-400 text-base line-clamp-3 mb-5">Game Setan Season 1 membawa Anda ke dalam dunia horor penuh
+          misteri. Berperan sebagai karakter utama, Anda harus mengatasi berbagai teka-teki dan melawan musuh yang
+          semakin kuat untuk melarikan diri dari dunia gelap yang penuh dengan kejahatan. </p>
+        <br>
+        <a class="text-lg font-light  border-[1px] px-10 py-2  border-zinc-300 rounded-md hover:bg-zinc-900"
+          href="/SetanS1.html"><button> Coba Sekarang <span class="font-bold text-green-500"> Free </span></button></a>
+      </div>
+      <div>
+        <img src="./asset/GamePlay/s1/1.png" alt="">
+      </div>
+    </div>
+    <!-- card 2 -->
+    <div data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-mirror="true"
+      data-aos-anchor-placement="top-center" data-aos-once="false" data-aos-offset="0" data-aos-delay="300"
+      class="bg-gradasi1 px-[5%] py-[8%] relative hover:scale-105 cursor-pointer duration-200 rounded-lg grid md1:grid-cols-2 items-center border-2 border-zinc-600 shadow-xl gap-10">
+      <div class="absolute right-0 top-0 px-10 py-3 bg-orange-700 shadow-xl rounded-bl-xl">
+        Versi Terbaru
+      </div>
+      <div>
+        <h1 class="text-4xl mb-2 font-bold libre-caslon-text-bold">Game Setan
+          <br>
+          Season 2
+        </h1>
+        <p>Size: 270.3 MB</p>
+        <p class="text-zinc-400 text-base line-clamp-3 mb-5">Lanjutan dari Game Setan Season 1, Season 2 menawarkan
+          tantangan yang lebih besar dengan dunia yang lebih gelap dan musuh yang semakin tangguh. Dalam perjalanan ini,
+          Anda akan menemui teka-teki yang lebih rumit dan situasi yang lebih menegangkan.</p>
+        <br>
+        <a class="text-lg font-light  border-[1px] px-10 py-2  border-zinc-300 rounded-md hover:bg-zinc-900"
+          href="/SetanS2.html"><button> Coba Sekarang <span class="font-bold text-green-500"> Free </span></button></a>
+      </div>
+      <div>
+        <img src="./asset/GamePlay/s2/1.png" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <div id="enemy">
+
+  </div>
+  <!-- konten 2 / enemy -->
+  <div class="px-[4%] md1:px-[10%] grid md1:grid-cols-2 tems-center my-[20%]">
+    <div data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-mirror="true"
+      data-aos-anchor-placement="top-center" data-aos-once="false" data-aos-offset="0" data-aos-delay="300">
+      <img class="w-[400px] sm1:w-[370px] sm2:w-[300px] md1:w-[440px] md2:w-[460px] lg1:w-[600px] "
+        src="asset/mockup2.png" alt />
+    </div>
+    <div data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-mirror="true"
+      data-aos-anchor-placement="top-center" data-aos-once="false" data-aos-offset="0" data-aos-delay="300"
+      class="ml-5 mt-5">
+      <div class="text-xl ml-5 font-bold sm2:text-4xl lg1:text-5xl lg1:mb-7  libre-caslon-text-bold">
+        Asset <span class=" text-zinc-400"> In Game</span>
+      </div>
+      <br />
+      <div class="text-xs sm1:text-sm sm2:text-base lg1:text-2xl ">
+        saat ini game setan menggunakan lebih dari 100 asset. musuh terpopuler
+        adalah pocong, kuntilanak, kuyang dan babi hutan
+      </div>
+    </div>
+  </div>
+
+
+  <!-- macam macam musuh -->
+  <div data-aos="fade-up" class="md1:columns-4 px-[4%] md1:px-[10%] gap-5 py-[5%]">
+    <!-- card1 -->
+    <div
+      class="bg-zinc-800 hover:bg-zinc-900 duration-300 cursor-pointer hover:scale-105 shadow-xl p-5 rounded-lg mb-5 border-[1px] border-zinc-600 relative break-inside-avoid">
+      <!-- label -->
+      <div class="bg-red-700 px-10 py-3 right-0 top-5 rounded-l-lg absolute z-[9] drop-shadow-lg">
+        Season 2
+      </div>
+      <!-- hantun -->
+      <div class="bg-zinc-700 p-5">
+        <img class="drop-shadow-lg w-full" src="./asset/hantu/tokohs2.png" alt="">
+      </div>
+      <div>
+        <h1 class="text-2xl font-bold mt-5">Pocong</h1>
+        <p class=" text-zinc-400">Hantu yang terkenal dengan penampilannya yang menakutkan dan tubuh terikat kain kafan.
+        </p>
+      </div>
+    </div>
+
+    <!-- card2 -->
+    <div
+      class="bg-zinc-800 hover:bg-zinc-900 duration-300 cursor-pointer hover:scale-105 shadow-xl p-5 rounded-lg mb-5 border-[1px] border-zinc-600 relative break-inside-avoid">
+      <!-- label -->
+      <div class="bg-red-700 px-10 py-3 right-0 top-5 rounded-l-lg absolute z-[9] drop-shadow-lg">
+        Season 2
+      </div>
+      <!-- hantun -->
+      <div class="bg-zinc-700 p-5">
+        <img class="drop-shadow-lg w-full" src="./asset/hantu/ps2.png" alt="">
+      </div>
+      <div>
+        <h1 class="text-2xl font-bold mt-5">Pocong</h1>
+        <p class=" text-zinc-400">Hantu legendaris yang sering muncul dengan tubuh terbungkus kafan putih.</p>
+      </div>
+    </div>
+
+    <!-- card3 -->
+    <div
+      class="bg-zinc-800 hover:bg-zinc-900 duration-300 cursor-pointer hover:scale-105 shadow-xl p-5 rounded-lg mb-5 border-[1px] border-zinc-600 relative break-inside-avoid">
+      <!-- label -->
+      <div class="bg-red-700 px-10 py-3 right-0 top-5 rounded-l-lg absolute z-[9] drop-shadow-lg">
+        Season 2
+      </div>
+      <!-- hantun -->
+      <div class="bg-zinc-700 p-5">
+        <img class="drop-shadow-lg w-full" src="./asset/hantu/kuyangs2.png" alt="">
+      </div>
+      <div>
+        <h1 class="text-2xl font-bold mt-5">Kuyang</h1>
+        <p class=" text-zinc-400">Hantu yang dikenal dengan kepala terlepas dan darah yang menetes.</p>
+      </div>
+    </div>
+
+    <!-- card4 -->
+    <div
+      class="bg-zinc-800 hover:bg-zinc-900 duration-300 cursor-pointer hover:scale-105 shadow-xl p-5 rounded-lg mb-5 border-[1px] border-zinc-600 relative break-inside-avoid">
+      <!-- label -->
+      <div class="bg-red-700 px-10 py-3 right-0 top-5 rounded-l-lg absolute z-[9] drop-shadow-lg">
+        Season 1
+      </div>
+      <!-- hantun -->
+      <div class="bg-zinc-700 p-5">
+        <img class="drop-shadow-lg w-full" src="./asset/hantu/kuyangs1.png" alt="">
+      </div>
+      <div>
+        <h1 class="text-2xl font-bold mt-5">Kuyang</h1>
+        <p class=" text-zinc-400">Makhluk mitologi yang berbentuk kepala terbang mencari darah manusia.</p>
+      </div>
+    </div>
+
+    <!-- card5 -->
+    <div
+      class="bg-zinc-800 hover:bg-zinc-900 duration-300 cursor-pointer hover:scale-105 shadow-xl p-5 rounded-lg mb-5 border-[1px] border-zinc-600 relative break-inside-avoid">
+      <!-- label -->
+      <div class="bg-red-700 px-10 py-3 right-0 top-5 rounded-l-lg absolute z-[9] drop-shadow-lg">
+        Season 2
+      </div>
+      <!-- hantun -->
+      <div class="bg-zinc-700 p-5">
+        <img class="drop-shadow-lg w-full" src="./asset/hantu/K1.03.png" alt="">
+      </div>
+      <div>
+        <h1 class="text-2xl font-bold mt-5">Kuntilanak</h1>
+        <p class=" text-zinc-400">Makhluk halus yang muncul dengan rambut panjang dan suara tangisan menyeramkan.</p>
+      </div>
+    </div>
+
+    <!-- card6 -->
+    <div
+      class="bg-zinc-800 hover:bg-zinc-900 duration-300 cursor-pointer hover:scale-105 shadow-xl p-5 rounded-lg mb-5 border-[1px] border-zinc-600 relative break-inside-avoid">
+      <!-- label -->
+      <div class="bg-red-700 px-10 py-3 right-0 top-5 rounded-l-lg absolute z-[9] drop-shadow-lg">
+        Season 2
+      </div>
+      <!-- hantun -->
+      <div class="bg-zinc-700 p-5">
+        <img class="drop-shadow-lg w-full" src="./asset/hantu/tokoh1.png" alt="">
+      </div>
+      <div>
+        <h1 class="text-2xl font-bold mt-5">Tokoh Utama</h1>
+        <p class=" text-zinc-400">Karakter utama dalam cerita yang sering kali menghadapi tantangan atau bahaya.</p>
+      </div>
+    </div>
+
+    <!-- card7 -->
+    <div
+      class="bg-zinc-800 hover:bg-zinc-900 duration-300 cursor-pointer hover:scale-105 shadow-xl p-5 rounded-lg mb-5 border-[1px] border-zinc-600 relative break-inside-avoid">
+      <!-- label -->
+      <div class="bg-red-700 px-10 py-3 right-0 top-5 rounded-l-lg absolute z-[9] drop-shadow-lg">
+        Season 2
+      </div>
+      <!-- hantun -->
+      <div class="bg-zinc-700 p-5">
+        <img class="drop-shadow-lg w-full" src="./asset/hantu/babis2.png" alt="">
+      </div>
+      <div>
+        <h1 class="text-2xl font-bold mt-5">Siluman Babi Hutan</h1>
+        <p class=" text-zinc-400">Hantu berbentuk babi besar yang sering dikaitkan dengan legenda dan mitos lokal.</p>
+      </div>
+    </div>
+
+    <!-- card8 -->
+    <div
+      class="bg-zinc-800 hover:bg-zinc-900 duration-300 cursor-pointer hover:scale-105 shadow-xl p-5 rounded-lg mb-5 border-[1px] border-zinc-600 relative break-inside-avoid">
+      <!-- label -->
+      <div class="bg-red-700 px-10 py-3 right-0 top-5 rounded-l-lg absolute z-[9] drop-shadow-lg">
+        Season 2
+      </div>
+      <!-- hantun -->
+      <div class="bg-zinc-700 p-5">
+        <img class="drop-shadow-lg w-full" src="./asset/hantu/K1.02.png" alt="">
+      </div>
+      <div>
+        <h1 class="text-2xl font-bold mt-5">Kuntilanak</h1>
+        <p class=" text-zinc-400">Hantu wanita yang muncul dengan suara tangisan keras di malam hari.</p>
+      </div>
+    </div>
+
+    <!-- card9 -->
+    <div
+      class="bg-zinc-800 hover:bg-zinc-900 duration-300 cursor-pointer hover:scale-105 shadow-xl p-5 rounded-lg mb-5 border-[1px] border-zinc-600 relative break-inside-avoid">
+      <!-- label -->
+      <div class="bg-red-700 px-10 py-3 right-0 top-5 rounded-l-lg absolute z-[9] drop-shadow-lg">
+        Season 1
+      </div>
+      <!-- hantun -->
+      <div class="bg-zinc-700 p-5">
+        <img class="drop-shadow-lg w-full" src="./asset/hantu/1.0.png" alt="">
+      </div>
+      <div>
+        <h1 class="text-2xl font-bold mt-5">Siluman Babi Hutaan</h1>
+        <p class=" text-zinc-400">Siluman babi hutan yang dipercaya dapat mengubah dirinya menjadi manusia untuk menipu.
+        </p>
+      </div>
+    </div>
+
+    <!-- card10 -->
+    <div
+      class="bg-zinc-800 hover:bg-zinc-900 duration-300 cursor-pointer hover:scale-105 shadow-xl p-5 rounded-lg mb-5 border-[1px] border-zinc-600 relative break-inside-avoid">
+      <!-- label -->
+      <div class="bg-red-700 px-10 py-3 right-0 top-5 rounded-l-lg absolute z-[9] drop-shadow-lg">
+        Season 1
+      </div>
+      <!-- hantun -->
+      <div class="bg-zinc-700 p-5">
+        <img class="drop-shadow-lg w-full" src="./asset/hantu/c1.03.png" alt="">
+      </div>
+      <div>
+        <h1 class="text-2xl font-bold mt-5">Pemeran Utama</h1>
+        <p class=" text-zinc-400">Karakter utama dalam cerita yang berperan penting dalam alur dan perkembangan cerita.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <br /><br /><br /><br /><br /><br /><br /><br />
+  <div class="px-10">
+    <img class src="asset/history.png" alt />
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-zinc-900 text-gray-300 py-10 mt-[20%]">
+    <div class="container mx-auto px-5 text-center">
+      <img class="mx-auto w-[30%] mb-5" src="asset/logo.png" alt="Logo" />
+      <p class="text-xl font-extralight mb-5">
+        Aplikasi ini hanya tersedia untuk sistem operasi Windows.
+        Silakan hubungi kami jika Anda menemukan bug.
+        Laporkan kepada kami jika terdapat error.
+        Kami akan segera memperbaikinya untuk Anda.
+      </p>
+
+
+      <p class="text-sm md:text-base mb-10">Follow Us</p>
+      <div class="flex justify-center space-x-4">
+        <a class="hover:text-zinc-600 duration-300 hover:scale-105 cursor-pointer"
+          href="https://www.instagram.com/artworkhex_ofc/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24">
+            <circle cx="17" cy="7" r="1.5" fill="currentColor" fill-opacity="0">
+              <animate fill="freeze" attributeName="fill-opacity" begin="1.3s" dur="0.15s" values="0;1" />
+            </circle>
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path stroke-dasharray="72" stroke-dashoffset="72"
+                d="M16 3c2.76 0 5 2.24 5 5v8c0 2.76 -2.24 5 -5 5h-8c-2.76 0 -5 -2.24 -5 -5v-8c0 -2.76 2.24 -5 5 -5h4Z">
+                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="72;0" />
+              </path>
+              <path stroke-dasharray="28" stroke-dashoffset="28"
+                d="M12 8c2.21 0 4 1.79 4 4c0 2.21 -1.79 4 -4 4c-2.21 0 -4 -1.79 -4 -4c0 -2.21 1.79 -4 4 -4">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.6s" values="28;0" />
+              </path>
+            </g>
+          </svg>
+        </a>
+        <a class="hover:text-zinc-600 duration-300 hover:scale-105 cursor-pointer"
+          href="https://www.instagram.com/zzls__">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24">
+            <circle cx="17" cy="7" r="1.5" fill="currentColor" fill-opacity="0">
+              <animate fill="freeze" attributeName="fill-opacity" begin="1.3s" dur="0.15s" values="0;1" />
+            </circle>
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path stroke-dasharray="72" stroke-dashoffset="72"
+                d="M16 3c2.76 0 5 2.24 5 5v8c0 2.76 -2.24 5 -5 5h-8c-2.76 0 -5 -2.24 -5 -5v-8c0 -2.76 2.24 -5 5 -5h4Z">
+                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="72;0" />
+              </path>
+              <path stroke-dasharray="28" stroke-dashoffset="28"
+                d="M12 8c2.21 0 4 1.79 4 4c0 2.21 -1.79 4 -4 4c-2.21 0 -4 -1.79 -4 -4c0 -2.21 1.79 -4 4 -4">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.6s" values="28;0" />
+              </path>
+            </g>
+          </svg>
+        </a>
+        <a class="hover:text-zinc-600 duration-300 hover:scale-105 cursor-pointer"
+          href="https://www.youtube.com/channel/UCCSMLh8LWJxTtquNCztLjpw/channels">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24">
+            <path fill="currentColor" fill-opacity="0" d="M12 11L12 12L12 13z">
+              <animate fill="freeze" attributeName="d" begin="0.6s" dur="0.2s"
+                values="M12 11L12 12L12 13z;M10 8.5L16 12L10 15.5z" />
+              <set fill="freeze" attributeName="fill-opacity" begin="0.6s" to="1" />
+            </path>
+            <path fill="none" stroke="currentColor" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2"
+              d="M12 5c9 0 9 0 9 7c0 7 0 7 -9 7c-9 0 -9 0 -9 -7c0 -7 0 -7 9 -7Z">
+              <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" />
+            </path>
+          </svg>
+        </a>
+        <a class="hover:text-zinc-600 duration-300 hover:scale-105 cursor-pointer"
+          href="https://artworkhex.github.io/awh/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 256 256">
+            <path fill="currentColor"
+              d="M128 24a104 104 0 1 0 104 104A104.12 104.12 0 0 0 128 24m88 104a87.6 87.6 0 0 1-3.33 24h-38.51a157.4 157.4 0 0 0 0-48h38.51a87.6 87.6 0 0 1 3.33 24m-114 40h52a115.1 115.1 0 0 1-26 45a115.3 115.3 0 0 1-26-45m-3.9-16a140.8 140.8 0 0 1 0-48h59.88a140.8 140.8 0 0 1 0 48ZM40 128a87.6 87.6 0 0 1 3.33-24h38.51a157.4 157.4 0 0 0 0 48H43.33A87.6 87.6 0 0 1 40 128m114-40h-52a115.1 115.1 0 0 1 26-45a115.3 115.3 0 0 1 26 45m52.33 0h-35.62a135.3 135.3 0 0 0-22.3-45.6A88.29 88.29 0 0 1 206.37 88Zm-98.74-45.6A135.3 135.3 0 0 0 85.29 88H49.63a88.29 88.29 0 0 1 57.96-45.6M49.63 168h35.66a135.3 135.3 0 0 0 22.3 45.6A88.29 88.29 0 0 1 49.63 168m98.78 45.6a135.3 135.3 0 0 0 22.3-45.6h35.66a88.29 88.29 0 0 1-57.96 45.6" />
+          </svg>
+        </a>
+
+      </div>
+      <div class="mt-10 text-sm md:text-base">
+        <a class="hover:underline"
+          href="https://drive.google.com/drive/folders/1oWDv9SVpYgq3ZZ0XWjySQEe2ZJ-Q1874?usp=share_link">Download Setan
+          S1</a> |
+        <a class="hover:underline"
+          href="https://drive.google.com/drive/folders/1h1QUXXApfWImGKaLsAlIDXTKb5i93K7N?usp=share_link">Download Setan
+          S2</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="src/script.js"></script>
+  <!-- anmimasi aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
