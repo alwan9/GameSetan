@@ -26,13 +26,22 @@
 </head>
 
 <body>
-    <div class="absolute top-0 w-full bg-zinc-700 h-[200px] rounded-b-[10rem] ">
-    </div>
-    <div class="px-[10%] py-[3%] grid grid-cols-2 gap-[5%] items-center text-zinc-50 relative z-[999]">
+    <a href="/index.html">
+        <div class="flex md1:hidden pt-[40%] gap-5 items-center text-lg px-[10%]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 1024 1024">
+                <path fill="currentColor" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64" />
+                <path fill="currentColor"
+                    d="m237.248 512l265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312z" />
+            </svg>
+            <span>
+                back</span>
+        </div>
+    </a>
+    <div class="px-[10%] py-[20%] md1:py-[3%] grid md1:grid-cols-2 gap-[5%] items-center text-zinc-50 relative z-[999]">
         <!-- courcel -->
         <div id="default-carousel" class="relative w-full" data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="relative  overflow-hidden rounded-lg h-[54rem]">
+            <div class="relative  overflow-hidden rounded-lg h-[10rem] md1:h-[54rem]">
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <img src="asset/GamePlay/s1/1.png"
@@ -103,7 +112,7 @@
         <!-- keterangan -->
         <div>
             <a href="/index.html">
-                <div class="flex gap-5 items-center text-lg">
+                <div class="hidden md1:flex gap-5 items-center text-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 1024 1024">
                         <path fill="currentColor" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64" />
                         <path fill="currentColor"
@@ -114,40 +123,42 @@
                 </div>
             </a>
             <div class="flex gap-6 py-10 items-center mt-10">
-                <div class="text-center">
-                    <h1 class="font-bold">Pengguna</h1>
+                <div class="text-center scale-75">
+                    <h1 class=" font-bold">Pengguna</h1>
                     <p class="tetx-sm mt-1">29+ pengguna</p>
                 </div>
                 <div class="w-[3px] h-full bg-zinc-50 rounded-full">i</div>
-                <div class="text-center">
-                    <h1 > <span class="bg-zinc-200 px-1 font-bold text-xs text-zinc-900">12+ </span></h1>
+                <div class="text-center scale-50 md1:scale-100">
+                    <h1> <span class="bg-zinc-200 px-1  md1:text-sm font-bold  text-zinc-900">12+ </span></h1>
                     <p class="tetx-sm mt-1">Rated for 12+</p>
                 </div>
             </div>
-            <h1 class="text-5xl ">
+            <h1 class="text-3xl md1:text-5xl ">
                 Game Setan <span class="font-light"> Season 1 By artworkhex_ofc</span>
             </h1>
-            <div class="flex items-center gap-3 mt-5">
+            <div class="flex items-center gap-2 md1:gap-3 mt-5">
                 <p
-                    class="px-5 py-2 rounded-full border-2 text-xs border-zinc-700 hover:bg-zinc-700 cursor-pointer duration-200 bg-zinc-800">
+                    class="px-3 md1:px-5 py-1 md1:py-2  rounded-full border-2 text-xs border-zinc-700 hover:bg-zinc-700 cursor-pointer duration-200 bg-zinc-800">
                     Kesulitan Medium</p>
                 <p
-                    class="px-5 py-2 rounded-full border-2 text-xs border-zinc-700 hover:bg-zinc-700 cursor-pointer duration-200 bg-zinc-800">
+                    class="px-3 md1:px-5 py-1 md1:py-2  rounded-full border-2 text-xs border-zinc-700 hover:bg-zinc-700 cursor-pointer duration-200 bg-zinc-800">
                     G-develop</p>
                 <p
-                    class="px-5 py-2 rounded-full border-2 text-xs border-zinc-700 hover:bg-zinc-700 cursor-pointer duration-200 bg-zinc-800">
+                    class="px-3 md1:px-5 py-1 md1:py-2  rounded-full border-2 text-xs border-zinc-700 hover:bg-zinc-700 cursor-pointer duration-200 bg-zinc-800">
                     Size 179,2 MB</p>
                 <p
-                    class="px-5 py-2 rounded-full border-2 text-xs border-zinc-700 hover:bg-zinc-700 cursor-pointer duration-200 bg-zinc-800">
+                    class="px-3 md1:px-5 py-1 md1:py-2  rounded-full border-2 text-xs border-zinc-700 hover:bg-zinc-700 cursor-pointer duration-200 bg-zinc-800">
                     Windows 10+</p>
 
             </div>
-            <p style="font-weight: 10;" class="text-2xl  font-thin mt-5">Game ini menceritakan tentang anak kecil yang tersesat namun dia belum
+            <p class="text-xl md1:text-2xl  font-thin mt-5">Game ini menceritakan tentang anak kecil yang
+                tersesat namun dia belum
                 tahu alasan dia tersesat, sebelumnya anak kecil tersebut sedang bermain
                 dengan temannya dan sedang bermain hantu hantuan.</p>
-                <div class="flex gap-5 mt-10">
+                <div class="md1:flex gap-3 md1:gap-5 mt-10">
+                    <!-- drive -->
                     <button
-                        class="bg-zinc-800 text-zinc-50 border-zinc-600 text-left rounded-lg border-2 hover:bg-zinc-900 cursor-pointer px-10 py-2 duration-300 flex gap-3 items-center">
+                        class="bg-zinc-800 text-zinc-50 border-zinc-600 justify-center w-full md1:w-fit text-left rounded-lg border-2 hover:bg-zinc-900 cursor-pointer px-5 md1:px-10  py-1 md1:py-2 duration-300 flex gap-3 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
                             <g fill="none" fill-rule="evenodd">
                                 <path
@@ -157,12 +168,13 @@
                             </g>
                         </svg>
                         <div>
-                            <div class="text-sm"> Unduh Sekarang di </div>
+                            <div class="text-xs md1:text-sm"> Unduh Sekarang di </div>
                             <div>Google Drive</div>
                         </div>
                     </button>
+                    <!-- instagram -->
                     <button
-                        class="bg-transparent text-zinc-50 border-zinc-500 text-left rounded-lg border-2 hover:bg-zinc-800 cursor-pointer px-10 py-2 duration-300 flex gap-3 items-center">
+                        class="bg-transparent text-zinc-50 border-zinc-500 justify-center w-full md1:w-fit text-left mt-5 md1:mt-0 rounded-lg border-2 hover:bg-zinc-800 cursor-pointer px-5 md1:px-10  py-1 md1:py-2 duration-300 flex gap-3 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
                             <circle cx="17" cy="7" r="1.5" fill="currentColor" fill-opacity="0">
                                 <animate fill="freeze" attributeName="fill-opacity" begin="1.3s" dur="0.15s" values="0;1" />
@@ -181,7 +193,7 @@
                             </g>
                         </svg>
                         <div>
-                            <div class="text-sm"> Ikuti Saya di </div>
+                            <div class="text-xs md1:text-sm"> Ikuti Saya di </div>
                             <div>Instagram</div>
                         </div>
                     </button>
