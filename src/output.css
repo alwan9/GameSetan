@@ -1489,6 +1489,10 @@ input:checked + .toggle-bg {
   width: 100vw;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1598,6 +1602,10 @@ input:checked + .toggle-bg {
 
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .content-center {
@@ -2781,6 +2789,10 @@ img {
 
   .md1\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .md1\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md1\:rounded-xl {
