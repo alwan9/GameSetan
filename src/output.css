@@ -1119,6 +1119,10 @@ input:checked + .toggle-bg {
   bottom: 1.25rem;
 }
 
+.bottom-\[15\%\] {
+  bottom: 15%;
+}
+
 .bottom-\[3\%\] {
   bottom: 3%;
 }
@@ -1173,18 +1177,6 @@ input:checked + .toggle-bg {
 
 .top-5 {
   top: 1.25rem;
-}
-
-.bottom-\[10\%\] {
-  bottom: 10%;
-}
-
-.bottom-\[20\%\] {
-  bottom: 20%;
-}
-
-.bottom-\[15\%\] {
-  bottom: 15%;
 }
 
 .-z-10 {
@@ -1405,6 +1397,10 @@ input:checked + .toggle-bg {
   height: 1rem;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -1421,20 +1417,12 @@ input:checked + .toggle-bg {
   height: 10rem;
 }
 
-.h-\[200px\] {
-  height: 200px;
-}
-
 .h-\[40px\] {
   height: 40px;
 }
 
 .h-\[50\%\] {
   height: 50%;
-}
-
-.h-\[54rem\] {
-  height: 54rem;
 }
 
 .h-full {
@@ -1459,6 +1447,10 @@ input:checked + .toggle-bg {
 
 .w-4 {
   width: 1rem;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-64 {
@@ -1499,6 +1491,10 @@ input:checked + .toggle-bg {
 
 .w-screen {
   width: 100vw;
+}
+
+.max-w-screen-xl {
+  max-width: 1440px;
 }
 
 .flex-1 {
@@ -1606,6 +1602,10 @@ input:checked + .toggle-bg {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -1700,6 +1700,10 @@ input:checked + .toggle-bg {
   scroll-behavior: smooth;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1710,11 +1714,6 @@ input:checked + .toggle-bg {
 
 .rounded-md {
   border-radius: 0.375rem;
-}
-
-.rounded-b-\[10rem\] {
-  border-bottom-right-radius: 10rem;
-  border-bottom-left-radius: 10rem;
 }
 
 .rounded-e-lg {
@@ -1928,6 +1927,10 @@ input:checked + .toggle-bg {
   padding: 0.25rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-2\.5 {
   padding: 0.625rem;
 }
@@ -2090,11 +2093,6 @@ input:checked + .toggle-bg {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-base {
@@ -2513,6 +2511,11 @@ img {
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity, 1));
 }
 
+.focus\:ring-zinc-400:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(161 161 170 / var(--tw-ring-opacity, 1));
+}
+
 .group:hover .group-hover\:bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
 }
@@ -2629,6 +2632,11 @@ img {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity, 1));
 }
 
+.dark\:hover\:bg-gray-700:hover:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
+}
+
 .dark\:hover\:bg-gray-800:hover:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
@@ -2647,6 +2655,11 @@ img {
 .dark\:hover\:text-white:hover:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.dark\:focus\:ring-gray-600:focus:is(.dark *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(75 85 99 / var(--tw-ring-opacity, 1));
 }
 
 .group:hover .dark\:group-hover\:bg-gray-800\/60:is(.dark *) {
@@ -2872,6 +2885,11 @@ img {
     line-height: 1;
   }
 
+  .md1\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .md1\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -2880,11 +2898,6 @@ img {
   .md1\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md1\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .md1\:font-bold {
