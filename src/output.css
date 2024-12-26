@@ -2743,6 +2743,10 @@ img {
     display: flex;
   }
 
+  .md1\:grid {
+    display: grid;
+  }
+
   .md1\:hidden {
     display: none;
   }

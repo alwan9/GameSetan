@@ -26,13 +26,22 @@
 </head>
 
 <body>
-    <div class="absolute top-0 w-full bg-zinc-700 h-[200px] rounded-b-[10rem] ">
-    </div>
-    <div class="px-[10%] py-[3%] grid grid-cols-2 gap-[5%] items-center text-zinc-50 relative z-[999]">
+    <a href="/index.html">
+        <div class="flex md1:hidden pt-[40%] gap-5 items-center text-lg px-[10%]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 1024 1024">
+                <path fill="currentColor" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64" />
+                <path fill="currentColor"
+                    d="m237.248 512l265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312z" />
+            </svg>
+            <span>
+                back</span>
+        </div>
+    </a>
+    <div class="px-[10%] py-[3%] md1:grid grid-cols-2 gap-[5%] items-center text-zinc-50 relative z-[999]">
         <!-- courcel -->
         <div id="default-carousel" class="relative w-full" data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="relative  overflow-hidden rounded-lg h-[54rem]">
+            <div class="relative  overflow-hidden rounded-lg  h-[10rem] md1:h-[54rem]">
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <img src="asset/GamePlay/s2/1.png"
@@ -61,15 +70,15 @@
             </div>
             <!-- Slider indicators -->
             <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                <button type="button" class="hidden md1:block w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
                     data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                <button type="button" class="hidden md1:block w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
                     data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                <button type="button" class="hidden md1:block w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
                     data-carousel-slide-to="2"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                <button type="button" class="hidden md1:block w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
                     data-carousel-slide-to="3"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                <button type="button" class="hidden md1:block w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
                     data-carousel-slide-to="4"></button>
             </div>
             <!-- Slider controls -->
@@ -103,7 +112,7 @@
         <!-- keterangan -->
         <div>
             <a href="/index.html">
-                <div class="flex gap-5 items-center text-lg">
+                <div class="hidden md1:flex gap-5 items-center text-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 1024 1024">
                         <path fill="currentColor" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64" />
                         <path fill="currentColor"
@@ -113,21 +122,21 @@
                         back</span>
                 </div>
             </a>
-            <div class="flex gap-6 py-10 items-center mt-10">
-                <div class="text-center">
-                    <h1 class="font-bold">Pengguna</h1>
+            <div class="flex gap-3 md1:gap-6 py-10 items-center mt-10">
+                <div class="text-center scale-75">
+                    <h1 class=" font-bold">Pengguna</h1>
                     <p class="tetx-sm mt-1">29+ pengguna</p>
                 </div>
                 <div class="w-[3px] h-full bg-zinc-50 rounded-full">i</div>
-                <div class="text-center">
-                    <h1 > <span class="bg-zinc-200 px-1 font-bold text-xs text-zinc-900">12+ </span></h1>
+                <div class="text-center scale-50 md1:scale-100">
+                    <h1> <span class="bg-zinc-200 px-1  md1:text-sm font-bold  text-zinc-900">12+ </span></h1>
                     <p class="tetx-sm mt-1">Rated for 12+</p>
                 </div>
             </div>
-            <h1 class="text-5xl ">
+            <h1 class="text-3xl md1:text-5xl ">
                 Game Setan <span class="font-light"> Season 2 By artworkhex_ofc</span>
             </h1>
-            <div class="flex items-center gap-3 mt-5">
+            <div class="flex flex-wrap items-center gap-2 md1:gap-3 mt-5">
                 <p
                     class="px-5 py-2 rounded-full border-2 text-xs border-zinc-700 hover:bg-zinc-700 cursor-pointer duration-200 bg-zinc-800">
                     Kesulitan Medium</p>
@@ -142,51 +151,52 @@
                     Windows 10+</p>
 
             </div>
-            <p style="font-weight: 10;" class="text-2xl  font-thin mt-5">Game ini menceritakan tentang anak kecil yang tersesat namun dia belum
+            <p style="font-weight: 10;" class="text-2xl  font-thin mt-5">Game ini menceritakan tentang anak kecil yang
+                tersesat namun dia belum
                 tahu alasan dia tersesat, sebelumnya anak kecil tersebut sedang bermain
                 dengan temannya dan sedang bermain hantu hantuan.</p>
-                <div class="flex gap-5 mt-10">
-                    <button
-                        class="bg-zinc-800 text-zinc-50 border-zinc-600 text-left rounded-lg border-2 hover:bg-zinc-900 cursor-pointer px-10 py-2 duration-300 flex gap-3 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
-                            <g fill="none" fill-rule="evenodd">
-                                <path
-                                    d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
-                                <path fill="currentColor"
-                                    d="M14.31 3a2 2 0 0 1 1.644.861l.088.139l5.773 10a2 2 0 0 1 .082 1.842l-.082.158l-2.31 4a2 2 0 0 1-1.567.993l-.164.007H6.227a2 2 0 0 1-1.645-.861L4.495 20l-2.31-4a2 2 0 0 1-.082-1.842L2.185 14L7.96 4a2 2 0 0 1 1.568-.993L9.691 3zm5.196 13H9.113l-1.732 3h10.393zM9.114 6l-5.197 9l1.732 3l5.196-9zm5.196-1h-3.464l5.196 9h3.464zM12 11l-1.732 3h3.464z" />
-                            </g>
-                        </svg>
-                        <div>
-                            <div class="text-sm"> Unduh Sekarang di </div>
-                            <div>Google Drive</div>
-                        </div>
-                    </button>
-                    <button
-                        class="bg-transparent text-zinc-50 border-zinc-500 text-left rounded-lg border-2 hover:bg-zinc-800 cursor-pointer px-10 py-2 duration-300 flex gap-3 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
-                            <circle cx="17" cy="7" r="1.5" fill="currentColor" fill-opacity="0">
-                                <animate fill="freeze" attributeName="fill-opacity" begin="1.3s" dur="0.15s" values="0;1" />
-                            </circle>
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2">
-                                <path stroke-dasharray="72" stroke-dashoffset="72"
-                                    d="M16 3c2.76 0 5 2.24 5 5v8c0 2.76 -2.24 5 -5 5h-8c-2.76 0 -5 -2.24 -5 -5v-8c0 -2.76 2.24 -5 5 -5h4Z">
-                                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="72;0" />
-                                </path>
-                                <path stroke-dasharray="28" stroke-dashoffset="28"
-                                    d="M12 8c2.21 0 4 1.79 4 4c0 2.21 -1.79 4 -4 4c-2.21 0 -4 -1.79 -4 -4c0 -2.21 1.79 -4 4 -4">
-                                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.6s"
-                                        values="28;0" />
-                                </path>
-                            </g>
-                        </svg>
-                        <div>
-                            <div class="text-sm"> Ikuti Saya di </div>
-                            <div>Instagram</div>
-                        </div>
-                    </button>
-                </div>
-                
+            <div class="md1:flex gap-3 md1:gap-5 mt-10">
+                <button
+                    class="bg-zinc-800 text-zinc-50 border-zinc-600 justify-center w-full md1:w-fit text-left rounded-lg border-2 hover:bg-zinc-900 cursor-pointer px-5 md1:px-10  py-1 md1:py-2 duration-300 flex gap-3 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                            <path
+                                d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
+                            <path fill="currentColor"
+                                d="M14.31 3a2 2 0 0 1 1.644.861l.088.139l5.773 10a2 2 0 0 1 .082 1.842l-.082.158l-2.31 4a2 2 0 0 1-1.567.993l-.164.007H6.227a2 2 0 0 1-1.645-.861L4.495 20l-2.31-4a2 2 0 0 1-.082-1.842L2.185 14L7.96 4a2 2 0 0 1 1.568-.993L9.691 3zm5.196 13H9.113l-1.732 3h10.393zM9.114 6l-5.197 9l1.732 3l5.196-9zm5.196-1h-3.464l5.196 9h3.464zM12 11l-1.732 3h3.464z" />
+                        </g>
+                    </svg>
+                    <div>
+                        <div class="text-sm"> Unduh Sekarang di </div>
+                        <div>Google Drive</div>
+                    </div>
+                </button>
+                <button
+                    class="bg-transparent text-zinc-50 border-zinc-500 justify-center w-full md1:w-fit text-left mt-5 md1:mt-0 rounded-lg border-2 hover:bg-zinc-800 cursor-pointer px-5 md1:px-10  py-1 md1:py-2 duration-300 flex gap-3 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+                        <circle cx="17" cy="7" r="1.5" fill="currentColor" fill-opacity="0">
+                            <animate fill="freeze" attributeName="fill-opacity" begin="1.3s" dur="0.15s" values="0;1" />
+                        </circle>
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2">
+                            <path stroke-dasharray="72" stroke-dashoffset="72"
+                                d="M16 3c2.76 0 5 2.24 5 5v8c0 2.76 -2.24 5 -5 5h-8c-2.76 0 -5 -2.24 -5 -5v-8c0 -2.76 2.24 -5 5 -5h4Z">
+                                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="72;0" />
+                            </path>
+                            <path stroke-dasharray="28" stroke-dashoffset="28"
+                                d="M12 8c2.21 0 4 1.79 4 4c0 2.21 -1.79 4 -4 4c-2.21 0 -4 -1.79 -4 -4c0 -2.21 1.79 -4 4 -4">
+                                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.6s"
+                                    values="28;0" />
+                            </path>
+                        </g>
+                    </svg>
+                    <div>
+                        <div class="text-sm"> Ikuti Saya di </div>
+                        <div>Instagram</div>
+                    </div>
+                </button>
+            </div>
+
         </div>
     </div>
 
