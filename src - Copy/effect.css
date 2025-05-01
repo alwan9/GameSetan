@@ -1,0 +1,55 @@
+.an-left {
+	animation: myAnim 4s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.an-top {
+	animation: myAnim2 4s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim2 {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.an-center {
+	animation: myAnim3 4s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim3 {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* font color */
+.font-judul {
+	color: #ba1a1a;
+	background-image: -webkit-linear-gradient(45deg, #ba1a1a 0%, #f28888 94%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
